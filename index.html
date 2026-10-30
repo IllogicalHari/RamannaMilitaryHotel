@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ramanna Military Hotel - Non-Veg Paradise | Chikkaballapur</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Outfit (Modern Headings) & Plus Jakarta Sans (Clean Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+       tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f0c08',
+                            card: '#1a1611',
+                            accent: '#f97316', // Vibrant Amber/Orange
+                            gold: '#fbbf24',
+                            border: '#2a241c',
+                            muted: '#a1a1aa'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f0c08;
+            color: #f3f4f6;
+        }
+        .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* Custom subtle scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f0c08;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a241c;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f97316;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-slate-950 flex flex-col justify-between min-h-screen w-full overflow-x-hidden">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 text-white text-xs md:text-sm font-semibold py-2 px-4 text-center tracking-wide shadow-md">
+        <i class="fa-solid fa-fire text-yellow-300 mr-2 animate-pulse"></i>
+        <span>Special White Biryani available exclusively on <strong>Tuesdays & Fridays</strong>!</span>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+            <!-- Brand Logo / Title -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-amber-700 flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-drumstick-bite"></i>
+                </div>
+                <div>
+                    <span class="block font-heading font-black text-lg md:text-xl text-white tracking-tight leading-none">RAMANNA</span>
+                    <span class="block text-[10px] md:text-xs font-bold text-orange-500 tracking-widest uppercase">Military Hotel</span>
+                    <span class="block text-[10px] md:text-xs font-bold text-white-500 tracking-widest uppercase">By Appi</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-orange-500 transition-colors">About</a>
+                <a href="#menu" class="hover:text-orange-500 transition-colors">Menu Specials</a>
+                <a href="#specials" class="hover:text-orange-500 transition-colors">Catering</a>
+                <a href="#location" class="hover:text-orange-500 transition-colors">Location</a>
+            </nav>
+
+            <!-- Quick Action Button -->
+            <a href="tel:+919164855137" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white px-4 py-2 rounded-xl text-xs md:text-sm font-bold shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 transition-all transform active:scale-95">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Desk</span>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- HERO BANNER (MOBILE FIRST - FITS 100% SCREEN) -->
+    <section class="w-full relative bg-gradient-to-b from-brand-dark via-brand-card/80 to-brand-dark py-8 sm:py-16 px-4 border-b border-brand-border/60">
+        <div class="max-w-4xl mx-auto text-center">
+            
+            <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-3 py-1 rounded-full text-[11px] font-semibold mb-3">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>08:45 AM - 10:30 PM | Saturday Holiday</span>
+            </div>
+            
+            <h2 class="font-heading text-2xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight text-white mb-2 leading-tight">
+                Chikkaballapur's<br class="hidden sm:inline">
+                <span class="bg-gradient-to-r from-amber-400 via-orange-400 to-red-500 bg-clip-text text-transparent">Non-Veg Paradise</span>
+            </h2>
+            
+            <p class="text-xs sm:text-base text-gray-300 max-w-xl mx-auto mb-5 leading-relaxed font-medium">
+                Authentic Nati style Biryanis, Ragi Mudde Meals, Mutton Leg Soup & Tawa Frys by <strong>Raghavendra (Appi)</strong>.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="grid grid-cols-2 sm:flex items-center justify-center gap-2 sm:gap-3 max-w-md mx-auto">
+                <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" rel="noopener noreferrer" 
+                   class="bg-orange-600 hover:bg-orange-500 text-white px-3 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-lg shadow-orange-600/20 transition-all">
+                    <i class="fa-solid fa-utensils"></i> Swiggy Order
+                </a>
+                <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" rel="noopener noreferrer" 
+                   class="bg-red-600 hover:bg-red-500 text-white px-3 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-lg shadow-red-600/20 transition-all">
+                    <i class="fa-solid fa-bowl-food"></i> Zomato Order
+                </a>
+                <a href="https://wa.me/916366849165" target="_blank" rel="noopener noreferrer" 
+                   class="col-span-2 sm:col-span-1 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-600/20 transition-all">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Inquiry
+                </a>
+            </div>
+
+            <!-- Price Note Banner -->
+            <div class="mt-4 text-[10px] sm:text-xs text-amber-400/90 font-semibold flex items-center justify-center gap-1">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Live prices & options are available directly on Swiggy and Zomato.</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CATERING HIGHLIGHT BANNER -->
+    <section class="w-full py-4 px-3 bg-brand-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-gradient-to-r from-amber-950/40 via-brand-card to-red-950/40 border border-amber-500/30 p-4 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+                <div>
+                    <span class="inline-block bg-amber-500/20 text-amber-300 text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1 border border-amber-500/30">
+                        Catering Service
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl text-white font-extrabold tracking-tight">All Types Veg & Non-Veg Catering</h3>
+                    <p class="text-[11px] text-gray-300">Marriages, Housewarmings, Birthday Parties & Special Events.</p>
+                </div>
+                <a href="tel:+919164855137" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-4 py-2 rounded-xl text-xs transition-colors shadow-md text-center shrink-0">
+                    <i class="fa-solid fa-phone mr-1"></i> Contact Catering
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION (MOBILE 2-COLUMN GRID FIT) -->
+    <main class="w-full max-w-7xl mx-auto px-3 sm:px-6 py-6 flex-grow">
+        
+        <div class="text-center max-w-xl mx-auto mb-4">
+            <h2 class="font-heading text-2xl sm:text-4xl font-extrabold uppercase text-white tracking-tight">Menu</h2>
+            <p class="text-[11px] sm:text-xs text-gray-400 font-medium">Select a dish to order directly on Swiggy or Zomato.</p>
+        </div>
+
+        <!-- Scrollable Category Tabs -->
+        <div class="flex items-center justify-start sm:justify-center gap-1.5 overflow-x-auto pb-3 mb-4 text-xs font-semibold scrollbar-none">
+            <button onclick="filterMenu('all')" class="menu-tab active px-3.5 py-1.5 rounded-full bg-amber-500 text-slate-950 font-bold shadow-md transition-colors whitespace-nowrap">All Items</button>
+            <button onclick="filterMenu('biryani')" class="menu-tab px-3.5 py-1.5 rounded-full bg-brand-card text-gray-300 hover:bg-brand-border border border-brand-border transition-colors whitespace-nowrap">Biryani & Breads</button>
+            <button onclick="filterMenu('meals')" class="menu-tab px-3.5 py-1.5 rounded-full bg-brand-card text-gray-300 hover:bg-brand-border border border-brand-border transition-colors whitespace-nowrap">Mudde Meals</button>
+            <button onclick="filterMenu('frys')" class="menu-tab px-3.5 py-1.5 rounded-full bg-brand-card text-gray-300 hover:bg-brand-border border border-brand-border transition-colors whitespace-nowrap">Frys & Soups</button>
+            <button onclick="filterMenu('gravies')" class="menu-tab px-3.5 py-1.5 rounded-full bg-brand-card text-gray-300 hover:bg-brand-border border border-brand-border transition-colors whitespace-nowrap">Masala Gravies</button>
+        </div>
+
+        <!-- 2-COLUMN MOBILE GRID -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4" id="menu-grid">
+
+            <!-- 1. White Biryani (Special) -->
+            <div class="menu-card biryani bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb1faV08k5ksKyuvVd183mP2BYulpwUnNNZ1DUaHGSxfZL1JBSR_MaWdvj&s=10" alt="White Biryani" class="w-full h-full object-cover">
+                        <span class="absolute top-1.5 left-1.5 bg-red-600 text-white text-[8px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-md">Tue & Fri Only</span>
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-amber-400 leading-tight">White Biryani</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Exclusive Tue & Fri special fragrant white biryani preparation.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 2. Chicken Biryani with Egg -->
+            <div class="menu-card biryani bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/ChickenBiryani.png" alt="Chicken Biryani" class="w-full h-full object-cover">
+                        <span class="absolute top-1.5 left-1.5 bg-amber-500 text-slate-950 text-[8px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-md">Bestseller</span>
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Chicken Biryani (w/ Egg)</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Nati style rice biryani served with boiled egg.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 3. Mutton Biryani with Egg -->
+            <div class="menu-card biryani bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/MuttonBiryani.jpeg" alt="Mutton Biryani" class="w-full h-full object-cover">
+                        <span class="absolute top-1.5 left-1.5 bg-amber-500 text-slate-950 text-[8px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-md">Must Try</span>
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Mutton Biryani (w/ Egg)</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Slow-cooked tender mutton chunks in aromatic spices & boiled egg.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 4. Mutton Kushka with Egg -->
+            <div class="menu-card biryani bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/Kushka.png" alt="Mutton Kushka" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Mutton Kushka (w/ Egg)</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Flavorful biryani rice infused with mutton broth served with egg.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 5. Mutton Leg Soup -->
+            <div class="menu-card frys bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/LegSoup.png" alt="Mutton Leg Soup" class="w-full h-full object-cover">
+                        <span class="absolute top-1.5 left-1.5 bg-emerald-600 text-white text-[8px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-md">Healthy</span>
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Mutton Leg Soup</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Slow-boiled bone extract soup seasoned with pepper and herbs.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 6. Chicken Meals -->
+            <div class="menu-card meals bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/ChickenKushka.png" alt="Chicken Meals" class="w-full h-full object-cover">
+                        <span class="absolute top-1.5 left-1.5 bg-amber-500 text-slate-950 text-[8px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-md">Full Meal</span>
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Chicken Meals</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">1 Mudde, White Rice, Boiled Egg & Chicken Masala Gravy.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 7. Mutton Meals -->
+            <div class="menu-card meals bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/MuttonBiryani.jpeg" alt="Mutton Meals" class="w-full h-full object-cover">
+                        <span class="absolute top-1.5 left-1.5 bg-amber-500 text-slate-950 text-[8px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-md">Full Meal</span>
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Mutton Meals</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">1 Mudde, White Rice, Boiled Egg & Mutton Masala Gravy.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 8. Chicken Masala Gravy -->
+            <div class="menu-card gravies bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/chickenGravy.jpeg" alt="Chicken Masala Gravy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Chicken Masala Gravy</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Rich chicken curry prepared with freshly roasted nati spices.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 9. Mutton Masala Gravy -->
+            <div class="menu-card gravies bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/muttonfry.png" alt="Mutton Masala Gravy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Mutton Masala Gravy</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Tender mutton simmered in fragrant military hotel gravy.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 10. Boti Gravy -->
+            <div class="menu-card gravies bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnPnUl07zwHsHIbeQ_1WFywB1M6ErqnVr4951gIXbDXw&s=10" alt="Boti Gravy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Boti Gravy</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Traditional spicy sheep intestine masala curry specialty.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 11. Thale Mutton (Head) -->
+            <div class="menu-card frys bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/Thalemutton.png" alt="Thale Mutton" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Thale Mutton (Head)</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Village style sheep head meat cooked with rich ground herbs.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 12. Liver Fry -->
+            <div class="menu-card frys bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/Liver Fry.jpeg" alt="Liver Fry" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Liver Fry</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Fresh mutton liver pan-roasted with pepper and chillies.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 13. Chicken Fry -->
+            <div class="menu-card frys bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/Chickenfry.png" alt="Chicken Fry" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Chicken Fry</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Crispy & spicy pan-fried nati chicken starter.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 14. Mutton Fry -->
+            <div class="menu-card frys bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/muttonfry.png" alt="Mutton Fry" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Mutton Fry</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Dry-roasted tender mutton coated in pepper spice mix.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 15. Chapathi -->
+            <div class="menu-card biryani bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80" alt="Chapathi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Soft Chapathi</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Freshly made wheat flatbreads for non-veg curries.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+            <!-- 16. Parotta -->
+            <div class="menu-card biryani bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col justify-between amber-glow-card transition-all">
+                <div>
+                    <div class="relative h-28 sm:h-40 bg-slate-900 overflow-hidden">
+                        <img src="images/Parotta.jpeg" alt="Parotta" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 sm:p-3">
+                        <h3 class="font-heading font-extrabold text-xs sm:text-base text-white leading-tight">Flaky Parotta</h3>
+                        <p class="text-[9px] sm:text-xs text-gray-400 mt-1 line-clamp-2">Crispy multi-layered hot parottas off the tawa.</p>
+                    </div>
+                </div>
+                <div class="p-2 pt-0 flex flex-col gap-1">
+                    <a href="https://www.swiggy.com/menu/349710?source=sharing" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Swiggy</a>
+                    <a href="https://zomato.onelink.me/xqzv/4rbabdmg" target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg text-[9px] sm:text-xs font-bold text-center">Zomato</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER & ADDRESS (NO EMBEDDED MAP) -->
+    <section id="location" class="py-14 md:py-20 bg-brand-dark border-t border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-amber-500 font-bold text-xs uppercase tracking-widest block mb-2">Visit Us Today</span>
+                <h2 class="font-heading font-black text-3xl sm:text-4xl text-white mb-4">Location & Contact Details</h2>
+                <p class="text-gray-400 text-sm">Located conveniently on MG Road in Chikkaballapur. Come dine in or order takeout!</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Contact Info Cards (5 Cols) -->
+                <div class="lg:col-span-5 space-y-4">
+                    
+                    <!-- Address Card -->
+                    <div class="bg-brand-card border border-brand-border p-6 rounded-2xl">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-500 text-lg flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-white text-base mb-1">Hotel Address</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">
+                                    APMC Market 2nd gate opposite, MG Road,<br>
+                                    <span class="text-orange-400 font-semibold">Chikkaballapur, Karnataka</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Owner & Timings Card -->
+                    <div class="bg-brand-card border border-brand-border p-6 rounded-2xl">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-500 text-lg flex-shrink-0">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-white text-base mb-1">Management & Hours</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed mb-2">
+                                    Owner: <strong>Raghavendra (Appi)</strong>
+                                </p>
+                                <p class="text-xs text-gray-400">
+                                    <i class="fa-regular fa-clock mr-1 text-amber-400"></i> Daily: <strong>08:45 AM - 10:30 PM</strong>
+                                </p>
+                                <p class="text-xs text-red-400 mt-1">
+                                    <i class="fa-solid fa-circle-exclamation mr-1"></i> Closed every Saturday
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone & WhatsApp Card -->
+                    <div class="bg-brand-card border border-brand-border p-6 rounded-2xl space-y-3">
+                        <h4 class="font-heading font-bold text-white text-base mb-2">Phone & Ordering</h4>
+                        
+                        <a href="tel:+919164855137" class="flex items-center justify-between p-3 rounded-xl bg-brand-dark/60 hover:bg-brand-border transition-colors border border-brand-border/60">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-orange-400"></i>
+                                <span class="text-sm font-semibold text-gray-200">+91 91648 55137</span>
+                            </div>
+                            <span class="text-xs text-gray-400">Primary Desk</span>
+                        </a>
+
+                        <a href="https://wa.me/916366849165" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-emerald-950/20 hover:bg-emerald-950/40 transition-colors border border-emerald-500/30">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                                <span class="text-sm font-semibold text-emerald-300">+91 63668 49165</span>
+                            </div>
+                            <span class="text-xs text-emerald-400 font-bold">WhatsApp Order</span>
+                        </a>
+
+                        <a href="tel:+917624862055" class="flex items-center justify-between p-3 rounded-xl bg-brand-dark/60 hover:bg-brand-border transition-colors border border-brand-border/60">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-mobile-screen text-amber-400"></i>
+                                <span class="text-sm font-semibold text-gray-200">+91 76248 62055</span>
+                            </div>
+                            <span class="text-xs text-gray-400">Alternate</span>
+                        </a>
+                    </div>
+
+                    <!-- Instagram Card -->
+                    <a href="https://instagram.com/ramanna_military_hotel_" target="_blank" rel="noopener" class="flex items-center justify-between p-4 bg-gradient-to-r from-purple-900/30 via-pink-900/30 to-rose-900/30 border border-pink-500/30 rounded-2xl hover:border-pink-500/60 transition-all group">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-brands fa-instagram text-2xl text-pink-400 group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <div class="text-xs text-pink-300 font-semibold uppercase tracking-wider">Follow Us on Instagram</div>
+                                <div class="text-sm font-bold text-white">@ramanna_military_hotel_</div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-pink-400"></i>
+                    </a>
+
+                </div>
+
+        <div class="border-t border-brand-border/60 mt-6 pt-4 text-center text-[10px] text-gray-500">
+            &copy; <span id="year">2014</span> Ramanna Military Hotel, Chikkaballapur.
+        </div>
+    </footer>
+
+    <!-- CATEGORY FILTER JS -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function filterMenu(category) {
+            const tabs = document.querySelectorAll('.menu-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active', 'bg-amber-500', 'text-slate-950', 'font-bold');
+                tab.classList.add('bg-brand-card', 'text-gray-300');
+            });
+
+            event.target.classList.add('active', 'bg-amber-500', 'text-slate-950', 'font-bold');
+            event.target.classList.remove('bg-brand-card', 'text-gray-300');
+
+            const cards = document.querySelectorAll('.menu-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
